@@ -1,0 +1,75 @@
+$background-primary: #f06292;
+$background-light: #ff94c2;
+$background-dark:  #ba2d65;
+// Height variables
+$carousel-item-height: 300px;
+
+.navbar {
+	background: $background-dark;
+}
+
+.carousel {
+    background: $background-primary;
+    .carousel-item {
+        height: $carousel-item-height;
+        img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            min-height: 300px;
+        }
+    }
+}
+
+.jumbotron {
+	margin-bottom: 0;
+	background: $background-light;
+	padding-bottom: 20px;
+	.adress, .logo {
+		padding-right: 0;
+		padding-left: 0;
+		a {
+			color: aliceblue;
+		}
+	}
+}
+
+.slider {
+	padding: 0;
+}
+
+footer {
+	background: $background-light;
+	.footerContent {
+		padding-top: 20px;
+		padding-bottom: 20px;
+	}
+}
+
+.grid { 
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+	grid-gap: 11px;
+	align-items: stretch;
+	padding: 10px;
+	article {
+		border: 1px solid #ccc;
+		box-shadow: 2px 2px 6px 0px  rgba(0,0,0,0.3);
+		img {
+			max-width: 100%;
+		  }
+		
+	  }
+
+	}
+
+  .text {
+	padding: 0 20px 20px;
+	button {
+		background: $background-primary;
+		border: 0;
+		color: white;
+		padding: 10px;
+		width: 100%;
+		}
+  }
